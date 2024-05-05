@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{% block titulo %} {% endblock %}</title>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='imagnes/titulo.png') }}" style="display: block; margin: 0 auto;">
+    {% block contenido %} {% endblock %}
+</body>
+</html>
