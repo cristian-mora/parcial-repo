@@ -1,0 +1,7 @@
+Importa el módulo sqlite3: Este módulo proporciona una API de base de datos SQL ligera y es estándar en Python.
+Establece la conexión con la base de datos: Utiliza la función connect() del módulo sqlite3 para conectarse a una base de datos SQLite. Si la base de datos no existe, esta función la creará.
+Crea una tabla en la base de datos: Define una tabla llamada "productos" con las columnas id, categoria, marca, nombre, descripcion y precio. Utiliza la sentencia CREATE TABLE IF NOT EXISTS para asegurarse de que la tabla solo se cree si no existe ya.
+Elimina la tabla si existe: Utiliza la sentencia DROP TABLE IF EXISTS para eliminar la tabla "productos" si ya existe. Esto es útil para evitar conflictos si estás probando y modificando la estructura de la tabla.
+Inserta datos en la tabla: Utiliza la función executemany() para insertar múltiples filas de datos en la tabla "productos". Cada fila representa un producto con un id, categoria, marca, nombre, descripcion y precio.
+Guarda los cambios y cierra la conexión: Después de insertar los datos, realiza un commit() para guardar los cambios en la base de datos y luego cierra la conexión utilizando el método close().
+En resumen, este programa crea una base de datos SQLite llamada "web2.sqlite3", define una tabla llamada "productos" y la llena con algunos datos de productos. Es un programa básico pero fundamental para comenzar a trabajar con bases de datos SQLite en Python.
